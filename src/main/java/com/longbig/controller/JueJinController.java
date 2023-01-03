@@ -29,7 +29,7 @@ public class JueJinController {
         log.info("掘金自动签到开始");
         Map<String, String> header = Maps.newHashMap();
         String url = "https://api.juejin.cn/growth_api/v1/check_in";
-        String cookie = "uid_tt=80f1743d70a09367b1983a51c385e79f;sid_tt=dda226a3d66fc9b25c02bec4dc703f47";
+        String cookie = "uid_tt=替换掉;sid_tt=替换掉";
         RequestBody requestBody = new FormBody.Builder().build();
         String response = OkHttpUtils.post(url, cookie, requestBody, header);
 
